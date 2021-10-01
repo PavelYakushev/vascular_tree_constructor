@@ -7,12 +7,12 @@
 
 #include "Point.hpp"
 
-class Vascular_tree_node {
-public:
+struct Vascular_tree_node {
     Point coords;
     Vascular_tree_node * left;
     Vascular_tree_node * right;
-    explicit Vascular_tree_node(Point coords);
+    Vascular_tree_node * parent;
+    Vascular_tree_node(Point coords, Vascular_tree_node * parent);
     void bifurcate();
 };
 

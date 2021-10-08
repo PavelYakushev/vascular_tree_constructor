@@ -105,25 +105,25 @@ CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/theophrastus/CLionProjects/vascular_tree_fractalizer/Vascular_tree_node.cpp -o CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.s
 
-CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.o: CMakeFiles/vascular_tree_fractalizer.dir/flags.make
-CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.o: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.o -c /home/theophrastus/CLionProjects/vascular_tree_fractalizer/Point.cpp
+CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.o: CMakeFiles/vascular_tree_fractalizer.dir/flags.make
+CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.o: ../Arterial_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.o -c /home/theophrastus/CLionProjects/vascular_tree_fractalizer/Arterial_tree.cpp
 
-CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/theophrastus/CLionProjects/vascular_tree_fractalizer/Point.cpp > CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.i
+CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/theophrastus/CLionProjects/vascular_tree_fractalizer/Arterial_tree.cpp > CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.i
 
-CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/theophrastus/CLionProjects/vascular_tree_fractalizer/Point.cpp -o CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.s
+CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/theophrastus/CLionProjects/vascular_tree_fractalizer/Arterial_tree.cpp -o CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.s
 
 # Object files for target vascular_tree_fractalizer
 vascular_tree_fractalizer_OBJECTS = \
 "CMakeFiles/vascular_tree_fractalizer.dir/main.cpp.o" \
 "CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree.cpp.o" \
 "CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.o" \
-"CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.o"
+"CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.o"
 
 # External object files for target vascular_tree_fractalizer
 vascular_tree_fractalizer_EXTERNAL_OBJECTS =
@@ -131,7 +131,7 @@ vascular_tree_fractalizer_EXTERNAL_OBJECTS =
 vascular_tree_fractalizer: CMakeFiles/vascular_tree_fractalizer.dir/main.cpp.o
 vascular_tree_fractalizer: CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree.cpp.o
 vascular_tree_fractalizer: CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.o
-vascular_tree_fractalizer: CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.o
+vascular_tree_fractalizer: CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.o
 vascular_tree_fractalizer: CMakeFiles/vascular_tree_fractalizer.dir/build.make
 vascular_tree_fractalizer: CMakeFiles/vascular_tree_fractalizer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable vascular_tree_fractalizer"

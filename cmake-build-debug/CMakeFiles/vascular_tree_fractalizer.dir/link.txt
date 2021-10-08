@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/vascular_tree_fractalizer.dir/main.cpp.o CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree.cpp.o CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.o CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.o -o vascular_tree_fractalizer 
+/usr/bin/c++ -g CMakeFiles/vascular_tree_fractalizer.dir/main.cpp.o CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree.cpp.o CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.o CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.o -o vascular_tree_fractalizer 

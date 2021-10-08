@@ -7,15 +7,18 @@
 
 #include "Vascular_tree_node.hpp"
 #include "Point.hpp"
+#include <list>
 
 class Vascular_tree {
 public:
-    explicit Vascular_tree(Point root_coords);
     Vascular_tree();
-    virtual ~Vascular_tree() = 0;
+    virtual void branch() = 0;
+    virtual ~Vascular_tree();
 
-private:
+protected:
     Vascular_tree_node * root;
+    std::list<Vascular_tree_node *> leaves;
+    static bool intersects(const Point&, const Point []);
 };
 
 

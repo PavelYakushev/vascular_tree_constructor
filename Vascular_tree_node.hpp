@@ -9,11 +9,12 @@
 
 struct Vascular_tree_node {
     Point coords;
+    int height;
     Vascular_tree_node * left;
     Vascular_tree_node * right;
-    Vascular_tree_node * parent;
-    Vascular_tree_node(Point coords, Vascular_tree_node * parent);
-    void bifurcate();
+    Vascular_tree_node(const Point &, const int &);
+    Vascular_tree_node(const Vascular_tree_node &);
+    ~Vascular_tree_node();
 };
 
 

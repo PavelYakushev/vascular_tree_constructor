@@ -6,15 +6,15 @@
 #define VASCULAR_TREE_FRACTALIZER_VASCULAR_TREE_NODE_HPP
 
 #include "Point.hpp"
+#include <memory>
+#include <vector>
 
 struct Vascular_tree_node {
     Point coords;
-    int height;
-    Vascular_tree_node * left;
-    Vascular_tree_node * right;
-    Vascular_tree_node(const Point &, const int &);
-    Vascular_tree_node(const Vascular_tree_node &);
-    ~Vascular_tree_node();
+    int order;
+    Vascular_tree_node *parent;
+    std::vector<Vascular_tree_node *> children;
+    explicit Vascular_tree_node(const Point &);
 };
 
 

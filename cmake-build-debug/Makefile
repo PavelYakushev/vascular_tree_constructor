@@ -129,29 +129,29 @@ vascular_tree_fractalizer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/build
 .PHONY : vascular_tree_fractalizer/fast
 
-Arterial_tree.o: Arterial_tree.cpp.o
-.PHONY : Arterial_tree.o
+Predicates.o: Predicates.cpp.o
+.PHONY : Predicates.o
 
 # target to build an object file
-Arterial_tree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.o
-.PHONY : Arterial_tree.cpp.o
+Predicates.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.o
+.PHONY : Predicates.cpp.o
 
-Arterial_tree.i: Arterial_tree.cpp.i
-.PHONY : Arterial_tree.i
+Predicates.i: Predicates.cpp.i
+.PHONY : Predicates.i
 
 # target to preprocess a source file
-Arterial_tree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.i
-.PHONY : Arterial_tree.cpp.i
+Predicates.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.i
+.PHONY : Predicates.cpp.i
 
-Arterial_tree.s: Arterial_tree.cpp.s
-.PHONY : Arterial_tree.s
+Predicates.s: Predicates.cpp.s
+.PHONY : Predicates.s
 
 # target to generate assembly for a file
-Arterial_tree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.s
-.PHONY : Arterial_tree.cpp.s
+Predicates.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.s
+.PHONY : Predicates.cpp.s
 
 Vascular_tree.o: Vascular_tree.cpp.o
 .PHONY : Vascular_tree.o
@@ -234,9 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... vascular_tree_fractalizer"
-	@echo "... Arterial_tree.o"
-	@echo "... Arterial_tree.i"
-	@echo "... Arterial_tree.s"
+	@echo "... Predicates.o"
+	@echo "... Predicates.i"
+	@echo "... Predicates.s"
 	@echo "... Vascular_tree.o"
 	@echo "... Vascular_tree.i"
 	@echo "... Vascular_tree.s"

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Arterial_tree.cpp" "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles/vascular_tree_fractalizer.dir/Arterial_tree.cpp.o"
+  "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Predicates.cpp" "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.o"
   "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Vascular_tree.cpp" "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree.cpp.o"
   "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Vascular_tree_node.cpp" "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.o"
   "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/main.cpp" "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles/vascular_tree_fractalizer.dir/main.cpp.o"

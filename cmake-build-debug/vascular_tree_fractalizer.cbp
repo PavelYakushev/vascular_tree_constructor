@@ -82,13 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Arterial_tree.cpp">
-			<Option target="vascular_tree_fractalizer"/>
-		</Unit>
-		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Arterial_tree.hpp">
+		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Constants.hpp">
 			<Option target="vascular_tree_fractalizer"/>
 		</Unit>
 		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Point.hpp">
+			<Option target="vascular_tree_fractalizer"/>
+		</Unit>
+		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Predicates.cpp">
+			<Option target="vascular_tree_fractalizer"/>
+		</Unit>
+		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Predicates.hpp">
 			<Option target="vascular_tree_fractalizer"/>
 		</Unit>
 		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Vascular_tree.cpp">

@@ -129,29 +129,29 @@ vascular_tree_fractalizer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/build
 .PHONY : vascular_tree_fractalizer/fast
 
-Point.o: Point.cpp.o
-.PHONY : Point.o
+Predicates.o: Predicates.cpp.o
+.PHONY : Predicates.o
 
 # target to build an object file
-Point.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.o
-.PHONY : Point.cpp.o
+Predicates.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.o
+.PHONY : Predicates.cpp.o
 
-Point.i: Point.cpp.i
-.PHONY : Point.i
+Predicates.i: Predicates.cpp.i
+.PHONY : Predicates.i
 
 # target to preprocess a source file
-Point.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.i
-.PHONY : Point.cpp.i
+Predicates.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.i
+.PHONY : Predicates.cpp.i
 
-Point.s: Point.cpp.s
-.PHONY : Point.s
+Predicates.s: Predicates.cpp.s
+.PHONY : Predicates.s
 
 # target to generate assembly for a file
-Point.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.s
-.PHONY : Point.cpp.s
+Predicates.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.s
+.PHONY : Predicates.cpp.s
 
 Vascular_tree.o: Vascular_tree.cpp.o
 .PHONY : Vascular_tree.o
@@ -234,9 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... vascular_tree_fractalizer"
-	@echo "... Point.o"
-	@echo "... Point.i"
-	@echo "... Point.s"
+	@echo "... Predicates.o"
+	@echo "... Predicates.i"
+	@echo "... Predicates.s"
 	@echo "... Vascular_tree.o"
 	@echo "... Vascular_tree.i"
 	@echo "... Vascular_tree.s"

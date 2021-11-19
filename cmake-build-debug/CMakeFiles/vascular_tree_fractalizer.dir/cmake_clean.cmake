@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/vascular_tree_fractalizer.dir/Point.cpp.o"
+  "CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.o"
   "CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree.cpp.o"
   "CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.o"
   "CMakeFiles/vascular_tree_fractalizer.dir/main.cpp.o"

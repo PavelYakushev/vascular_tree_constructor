@@ -10,6 +10,9 @@
 
 namespace constants {
     const double min_difference_to_merge = 0.001;
+    const double alpha = 1.5;
+    const double beta = 2.0;
+    const double epsilon = 0.1
 }
 
 #endif //VASCULAR_TREE_FRACTALIZER_CONSTANTS_HPP

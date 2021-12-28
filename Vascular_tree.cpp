@@ -5,10 +5,11 @@
 #include "Predicates.hpp"
 #include "Vascular_tree.hpp"
 
+#include <utility>
 
-Vascular_tree::Vascular_tree(const Vascular_tree_node &root,
-    const std::vector<Point> &leaf_coords):
-    root(root) {
+
+Vascular_tree::Vascular_tree(Vascular_tree_node root, const std::vector<Point> &leaf_coords)
+    : root(std::move(root)) {
     for (auto coords: leaf_coords) {
         leaves.emplace_back(Vascular_tree_node(coords));
     }
@@ -16,45 +17,63 @@ Vascular_tree::Vascular_tree(const Vascular_tree_node &root,
 
 
 void Vascular_tree::prune(int order) {
-
+    Delete_low_order_nodes p(order);
+    apply_to_all(root, p);
 }
 
 
 void Vascular_tree::connect() {
     for (auto &leaf : leaves) {
-        Find_closest_node min_distance(leaf, root);
+        Find_closest_node p(leaf);
 
-        depth_first_search(root, min_distance);
+        apply_to_all(root, p);
 
-        auto closest_node = *min_distance.get_node_ptr();
+        auto closest_node = *p.get_node_ptr();
         closest_node.children.push_back(&leaf);
     }
+
+    Calculate_orders o;
+    apply_to_all(root, o);
+
+    Calculate_radii r;
+    apply_to_all(root, o);
 }
 
 
 void Vascular_tree::relax() {
-
+    Relax p;
+    apply_to_all(root, p);
 }
 
 
 void Vascular_tree::merge() {
-
+    Merge_adjacent_nodes p;
+    apply_to_all(root, p);
 }
 
 
 void Vascular_tree::split() {
-
+    Split p;
+    apply_to_all(root, p);
 }
 
 
 void Vascular_tree::branch() {
-
+    connect();
+    relax();
+    merge();
+    split();
 }
 
 
-void Vascular_tree::depth_first_search(Vascular_tree_node &node, Predicate &predicate) {
+void Vascular_tree::apply_to_all(Vascular_tree_node &node, Predicate &predicate) {
     for (auto &child_ptr: node.children) {
-        depth_first_search(*child_ptr, predicate);
+        apply_to_all(*child_ptr, predicate);
     }
     predicate(node);
+}
+
+Vascular_tree::~Vascular_tree() {
+    Hard_delete p;
+    apply_to_all(root, p);
 }

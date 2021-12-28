@@ -82,12 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Constants.hpp">
-			<Option target="vascular_tree_fractalizer"/>
-		</Unit>
-		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Point.hpp">
-			<Option target="vascular_tree_fractalizer"/>
-		</Unit>
 		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Predicates.cpp">
 			<Option target="vascular_tree_fractalizer"/>
 		</Unit>
@@ -106,7 +100,16 @@
 		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Vascular_tree_node.hpp">
 			<Option target="vascular_tree_fractalizer"/>
 		</Unit>
+		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/constants.hpp">
+			<Option target="vascular_tree_fractalizer"/>
+		</Unit>
 		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/main.cpp">
+			<Option target="vascular_tree_fractalizer"/>
+		</Unit>
+		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/space.cpp">
+			<Option target="vascular_tree_fractalizer"/>
+		</Unit>
+		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/space.hpp">
 			<Option target="vascular_tree_fractalizer"/>
 		</Unit>
 		<Unit filename="/home/theophrastus/CLionProjects/vascular_tree_fractalizer/CMakeLists.txt">

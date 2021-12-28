@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Vascular_tree.cpp" "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree.cpp.o"
   "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/Vascular_tree_node.cpp" "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles/vascular_tree_fractalizer.dir/Vascular_tree_node.cpp.o"
   "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/main.cpp" "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles/vascular_tree_fractalizer.dir/main.cpp.o"
+  "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/space.cpp" "/home/theophrastus/CLionProjects/vascular_tree_fractalizer/cmake-build-debug/CMakeFiles/vascular_tree_fractalizer.dir/space.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

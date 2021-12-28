@@ -225,6 +225,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+space.o: space.cpp.o
+.PHONY : space.o
+
+# target to build an object file
+space.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/space.cpp.o
+.PHONY : space.cpp.o
+
+space.i: space.cpp.i
+.PHONY : space.i
+
+# target to preprocess a source file
+space.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/space.cpp.i
+.PHONY : space.cpp.i
+
+space.s: space.cpp.s
+.PHONY : space.s
+
+# target to generate assembly for a file
+space.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/space.cpp.s
+.PHONY : space.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,6 +270,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... space.o"
+	@echo "... space.i"
+	@echo "... space.s"
 .PHONY : help
 
 

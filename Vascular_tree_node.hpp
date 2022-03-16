@@ -7,15 +7,15 @@
 
 #include "space.hpp"
 #include <memory>
-#include <list>
+#include <forward_list>
 
 struct Vascular_tree_node {
     bool is_terminal;
     int order;
     double radius;
     Point coords;
-    Vascular_tree_node *parent;
-    std::list<Vascular_tree_node *> children;
+    std::weak_ptr<Vascular_tree_node> parent;
+    std::forward_list<std::shared_ptr<Vascular_tree_node>> children;
     double cost() const;
     Force pull_force(Vascular_tree_node &node) const;
     Force gradient() const;

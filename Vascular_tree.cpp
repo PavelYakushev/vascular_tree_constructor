@@ -2,23 +2,14 @@
 // Created by theophrastus on 01.10.2021.
 //
 
-#include "Predicates.hpp"
+#include "Strategies.hpp"
 #include "Vascular_tree.hpp"
 
 #include <utility>
 
 
-Vascular_tree::Vascular_tree(Vascular_tree_node root, const std::vector<Point> &leaf_coords)
-    : root(std::move(root)) {
-    for (auto coords: leaf_coords) {
-        leaves.emplace_back(Vascular_tree_node(coords));
-    }
-}
-
-
 void Vascular_tree::prune(int order) {
-    Delete_low_order_nodes p(order);
-    apply_to_all(root, p);
+    apply_to_all(Delete_low_order_nodes(order));
 }
 
 
@@ -26,35 +17,29 @@ void Vascular_tree::connect() {
     for (auto &leaf : leaves) {
         Find_closest_node p(leaf);
 
-        apply_to_all(root, p);
+        apply_to_all(p);
 
         auto closest_node = *p.get_node_ptr();
-        closest_node.children.push_back(&leaf);
+        closest_node.children.push_front(&leaf);
     }
 
-    Calculate_orders o;
-    apply_to_all(root, o);
-
-    Calculate_radii r;
-    apply_to_all(root, o);
+    apply_to_all(Calculate_orders());
+    apply_to_all(Calculate_radii());
 }
 
 
 void Vascular_tree::relax() {
-    Relax p;
-    apply_to_all(root, p);
+    apply_to_all(Relax());
 }
 
 
 void Vascular_tree::merge() {
-    Merge_adjacent_nodes p;
-    apply_to_all(root, p);
+    apply_to_all(Merge_adjacent_nodes());
 }
 
 
 void Vascular_tree::split() {
-    Split p;
-    apply_to_all(root, p);
+    apply_to_all(Split());
 }
 
 
@@ -66,14 +51,23 @@ void Vascular_tree::branch() {
 }
 
 
-void Vascular_tree::apply_to_all(Vascular_tree_node &node, Predicate &predicate) {
+
+void Vascular_tree::apply_to_all(Strategy &&strategy) {
+    Strategy &s = strategy;
+    apply_in_depth(root, s);
+}
+
+void Vascular_tree::apply_to_all(Strategy &strategy) {
+    apply_in_depth(root, strategy);
+}
+
+void Vascular_tree::apply_in_depth(Vascular_tree_node &node, Strategy &strategy) {
     for (auto &child_ptr: node.children) {
-        apply_to_all(*child_ptr, predicate);
+        apply_in_depth(*child_ptr, strategy);
     }
-    predicate(node);
+    strategy(node);
 }
 
 Vascular_tree::~Vascular_tree() {
-    Hard_delete p;
-    apply_to_all(root, p);
+    apply_to_all(Hard_delete());
 }

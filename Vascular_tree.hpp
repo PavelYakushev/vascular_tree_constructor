@@ -12,7 +12,6 @@
 
 class Vascular_tree {
 public:
-    Vascular_tree(Vascular_tree_node root, const std::vector<Point> &leaf_coords);
     virtual ~Vascular_tree();
     virtual void branch();
 
@@ -25,7 +24,10 @@ protected:
     void merge();
     void split();
     void prune(int order);
-    void apply_to_all(Vascular_tree_node &node, Predicate &predicate);
+    void apply_to_all(Strategy &strategy);
+    void apply_to_all(Strategy &&strategy);
+
+    void apply_in_depth(Vascular_tree_node &node, Strategy &strategy);
 };
 
 

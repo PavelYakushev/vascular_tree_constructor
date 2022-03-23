@@ -1,3 +1,4 @@
-# vascular_tree_generator
+# vascular_tree_constructor
+A program for vascular tree model construction to use in CVSS (cardiovascular system simulator). 
 
-Генератор модельных артериального и комплементарного ему венозного сосудистых деревьев на основе случайным образом заданных терминальных узлов. 
+Implements GCO (global constructive optimization) to construct an optimal vascular network that evenly distributes the flow of viscous liquid from the source to several drains. 

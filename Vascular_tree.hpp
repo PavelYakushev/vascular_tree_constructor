@@ -6,13 +6,12 @@
 #define VASCULAR_TREE_FRACTALIZER_VASCULAR_TREE_HPP
 
 #include "Vascular_tree_node.hpp"
-#include "Point.hpp"
+#include "space.hpp"
 #include <memory>
 #include <vector>
 
 class Vascular_tree {
 public:
-    Vascular_tree(const Vascular_tree_node &root, const std::vector<Point> &leaf_coords);
     virtual ~Vascular_tree();
     virtual void branch();
 
@@ -25,7 +24,10 @@ protected:
     void merge();
     void split();
     void prune(int order);
-    void depth_first_search(Vascular_tree_node &, Predicate &);
+    void apply_to_all(Strategy &strategy);
+    void apply_to_all(Strategy &&strategy);
+
+    void apply_in_depth(Vascular_tree_node &node, Strategy &strategy);
 };
 
 

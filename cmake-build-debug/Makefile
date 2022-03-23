@@ -129,29 +129,29 @@ vascular_tree_fractalizer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/build
 .PHONY : vascular_tree_fractalizer/fast
 
-Predicates.o: Predicates.cpp.o
-.PHONY : Predicates.o
+Strategies.o: Strategies.cpp.o
+.PHONY : Strategies.o
 
 # target to build an object file
-Predicates.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.o
-.PHONY : Predicates.cpp.o
+Strategies.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Strategies.cpp.o
+.PHONY : Strategies.cpp.o
 
-Predicates.i: Predicates.cpp.i
-.PHONY : Predicates.i
+Strategies.i: Strategies.cpp.i
+.PHONY : Strategies.i
 
 # target to preprocess a source file
-Predicates.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.i
-.PHONY : Predicates.cpp.i
+Strategies.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Strategies.cpp.i
+.PHONY : Strategies.cpp.i
 
-Predicates.s: Predicates.cpp.s
-.PHONY : Predicates.s
+Strategies.s: Strategies.cpp.s
+.PHONY : Strategies.s
 
 # target to generate assembly for a file
-Predicates.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Predicates.cpp.s
-.PHONY : Predicates.cpp.s
+Strategies.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/Strategies.cpp.s
+.PHONY : Strategies.cpp.s
 
 Vascular_tree.o: Vascular_tree.cpp.o
 .PHONY : Vascular_tree.o
@@ -225,6 +225,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+space.o: space.cpp.o
+.PHONY : space.o
+
+# target to build an object file
+space.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/space.cpp.o
+.PHONY : space.cpp.o
+
+space.i: space.cpp.i
+.PHONY : space.i
+
+# target to preprocess a source file
+space.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/space.cpp.i
+.PHONY : space.cpp.i
+
+space.s: space.cpp.s
+.PHONY : space.s
+
+# target to generate assembly for a file
+space.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vascular_tree_fractalizer.dir/build.make CMakeFiles/vascular_tree_fractalizer.dir/space.cpp.s
+.PHONY : space.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -234,9 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... vascular_tree_fractalizer"
-	@echo "... Predicates.o"
-	@echo "... Predicates.i"
-	@echo "... Predicates.s"
+	@echo "... Strategies.o"
+	@echo "... Strategies.i"
+	@echo "... Strategies.s"
 	@echo "... Vascular_tree.o"
 	@echo "... Vascular_tree.i"
 	@echo "... Vascular_tree.s"
@@ -246,6 +270,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... space.o"
+	@echo "... space.i"
+	@echo "... space.s"
 .PHONY : help
 
 

@@ -5,17 +5,21 @@
 #ifndef VASCULAR_TREE_FRACTALIZER_VASCULAR_TREE_NODE_HPP
 #define VASCULAR_TREE_FRACTALIZER_VASCULAR_TREE_NODE_HPP
 
-#include "Point.hpp"
+#include "space.hpp"
 #include <memory>
-#include <vector>
+#include <forward_list>
 
 struct Vascular_tree_node {
-    Point coords;
+    bool is_terminal;
     int order;
-    Vascular_tree_node *parent;
-    std::vector<Vascular_tree_node *> children;
-    explicit Vascular_tree_node(const Point &);
+    double radius;
+    Point coords;
+    std::weak_ptr<Vascular_tree_node> parent;
+    std::forward_list<std::shared_ptr<Vascular_tree_node>> children;
+    double cost() const;
+    Force pull_force(Vascular_tree_node &node) const;
+    Force gradient() const;
+    explicit Vascular_tree_node(const Point coords, Vascular_tree_node *parent = nullptr, const bool is_terminal = false);
 };
-
 
 #endif //VASCULAR_TREE_FRACTALIZER_VASCULAR_TREE_NODE_HPP
